@@ -17,6 +17,7 @@
 		496FB06424F8C7EA00636504 /* MusicCrawlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FB06324F8C7EA00636504 /* MusicCrawlerTests.swift */; };
 		496FB06F24F8C7EA00636504 /* MusicCrawlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FB06E24F8C7EA00636504 /* MusicCrawlerUITests.swift */; };
 		496FB07D24F8CBC300636504 /* MusicCrawler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FB07C24F8CBC300636504 /* MusicCrawler.swift */; };
+		496FB07F24F8E68500636504 /* PlaylistVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FB07E24F8E68500636504 /* PlaylistVO.swift */; };
 		6FA03A505DC309E4967E9036 /* Pods_MusicCrawler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA004BCEB0C1136404C9EF6 /* Pods_MusicCrawler.framework */; };
 		CC78FA005BCE41553638D2DC /* Pods_MusicCrawlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3378A4611984D10683DED /* Pods_MusicCrawlerTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		496FB06E24F8C7EA00636504 /* MusicCrawlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCrawlerUITests.swift; sourceTree = "<group>"; };
 		496FB07024F8C7EA00636504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		496FB07C24F8CBC300636504 /* MusicCrawler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCrawler.swift; sourceTree = "<group>"; };
+		496FB07E24F8E68500636504 /* PlaylistVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVO.swift; sourceTree = "<group>"; };
 		4A639D719BA5D045858C9301 /* Pods-MusicCrawlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicCrawlerTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicCrawlerTests/Pods-MusicCrawlerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87F8D7E4BDAAC4139312CC49 /* Pods-MusicCrawlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicCrawlerTests.release.xcconfig"; path = "Target Support Files/Pods-MusicCrawlerTests/Pods-MusicCrawlerTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACFA9559EF2931DA134D0ECD /* Pods_MusicCrawler_MusicCrawlerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicCrawler_MusicCrawlerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				496FB05524F8C7EA00636504 /* Assets.xcassets */,
 				496FB05724F8C7EA00636504 /* LaunchScreen.storyboard */,
 				496FB05A24F8C7EA00636504 /* Info.plist */,
+				496FB07E24F8E68500636504 /* PlaylistVO.swift */,
 			);
 			path = MusicCrawler;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				496FB05124F8C7E700636504 /* ViewController.swift in Sources */,
 				496FB04D24F8C7E700636504 /* AppDelegate.swift in Sources */,
 				496FB07D24F8CBC300636504 /* MusicCrawler.swift in Sources */,
+				496FB07F24F8E68500636504 /* PlaylistVO.swift in Sources */,
 				496FB04F24F8C7E700636504 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
