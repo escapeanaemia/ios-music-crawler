@@ -20,7 +20,7 @@ class MusicCrawlerTests: XCTestCase {
     }
 
     func testFetchHTMLParsingResultWill(){
-        let crawling = MusicCralwer.fetchHTMLParsingResultWill()
+        let crawling = MusicCralwer.fetchHTMLParsingResultWill(urlString: BaseURL.init(year: 2015, category: 0, page: nil).FINAL_URL)
         XCTAssertTrue(crawling)
         
     }

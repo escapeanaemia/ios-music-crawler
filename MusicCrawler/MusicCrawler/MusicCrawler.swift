@@ -9,14 +9,37 @@
 import Foundation
 import SwiftSoup
 
+class BaseURL {
+    
+    private let BASE_URL = "https://www.genie.co.kr/chart/musicHistory"
+    private var YEAR : Int?
+    private var category: Int?
+    private var page:Int?
+    
+    var FINAL_URL: String = ""
+    
+    init(year:Int, category:Int, page:Int? ) {
+        self.YEAR = year
+        self.category = category
+        self.page = page
+        
+        FINAL_URL = BASE_URL
+            + "?"
+            + "year=\(year)"
+            + "&category=\(category)"
+        
+        if let page = page { FINAL_URL = FINAL_URL + "&pg=\(page)"}
+    }
+}
+
 class MusicCralwer{
-    static func fetchHTMLParsingResultWill() -> Bool{
+    static func fetchHTMLParsingResultWill(urlString:String) -> Bool{
         
         DispatchQueue.main.async {
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
         }
         
-        let urlAddress = "https://www.genie.co.kr/chart/musicHistory?year=2017&category=0&pg=2"
+        let urlAddress = urlString
         
         guard let url = URL(string: urlAddress) else { return  false}
         do{
