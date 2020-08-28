@@ -7,6 +7,7 @@ target 'MusicCrawler' do
 
   # Pods for MusicCrawler
 	pod 'SwiftSoup'
+	pod 'SDWebImage'
   target 'MusicCrawlerTests' do
     inherit! :search_paths
     # Pods for testing
