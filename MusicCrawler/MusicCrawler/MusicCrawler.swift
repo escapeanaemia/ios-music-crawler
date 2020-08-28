@@ -16,7 +16,7 @@ class MusicCralwer{
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
         }
         
-        let urlAddress = "https://www.genie.co.kr/chart/musicHistory?year=2017&category=0"
+        let urlAddress = "https://www.genie.co.kr/chart/musicHistory?year=2017&category=0&pg=2"
         
         guard let url = URL(string: urlAddress) else { return  false}
         do{
@@ -30,10 +30,16 @@ class MusicCralwer{
                 .select("div.music-list-wrap")
                 .select("table.list-wrap")
                 .select("tr.list")
-                .select("td.info")
-                .select("a.artist")
+                
+                
             for element in getCategory.array(){
-                debugPrint("-- \(try element.text())")
+                let info = try element.select("td.info")
+                let cover = try element.select("a.cover")
+                
+                debugPrint("---\(try info.select("a.artist").text())")
+                debugPrint(" \(try info.select("a.title").text())")
+                debugPrint(" \(try info.select("a.albumtitle").text())")
+                debugPrint(" \(try cover.select("img").attr("src"))")
             }
             
             return true
